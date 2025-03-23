@@ -33,3 +33,13 @@ p {
 ::-webkit-scrollbar-track {
 	height: 5px; /* Adjust this value to make the scrollbar shorter */
 }
+
+
+
+
+
+
+}    visibility: visible;    opacity: 1;.tooltip-wrapper:hover #tooltip {.text:hover + #tooltip {
+    opacity: 1;
+    visibility: visible;
+}
