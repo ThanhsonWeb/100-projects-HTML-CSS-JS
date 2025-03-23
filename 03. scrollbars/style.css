@@ -1,45 +1,21 @@
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: sans-serif;
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: antiquewhite;
 }
 
-section {
-	width: 70vw;
-	margin-top: 50px;
-	border: 2px solid orangered;
-}
-.card-title {
-	font-size: 3rem;
-}
-p {
-	line-height: 1.5;
-	text-indent: 30px;
+.scroll-div {
+	background-color: rgb(205, 201, 201);
+	width: 500px;
+	height: 500px;
+	/* overflow-y: scroll; */
+	overflow: hidden;
 }
 
-/* scrollbar */
-::-webkit-scrollbar {
-	background-color: rgb(156, 168, 168);
-	width: 20px;
-	height: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-	background-image: linear-gradient(#4158d0, #c850c0, #ffcc70);
-	border-radius: 100px;
-}
-
-::-webkit-scrollbar-track {
-	height: 5px; /* Adjust this value to make the scrollbar shorter */
-}
-
-
-
-
-
-
-}    visibility: visible;    opacity: 1;.tooltip-wrapper:hover #tooltip {.text:hover + #tooltip {
-    opacity: 1;
-    visibility: visible;
+.scroll-object {
+	/* height: 1000px; */
+	/* background-color: lightblue; */
+	padding: 20px;
 }
