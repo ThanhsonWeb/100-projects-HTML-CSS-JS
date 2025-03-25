@@ -18,15 +18,15 @@ body {
 	align-items: center;
 	height: 100vh;
 }
-/* 1 */
-#switch {
+/* 1  or hidden direclty on input tag */ 
+/* #switch {
 	width: 0;
 	height: 0;
 	visibility: hidden;
-}
+} */
 
 label {
-	/* display: block; */
+	display: block;
 	width: 150px;
 	height: 60px;
 	border-radius: 70px;
