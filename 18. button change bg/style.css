@@ -1,15 +1,15 @@
 body {
-	background-color: #121212; /* Darker background for better contrast */
+	background-color: #000;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
 :root {
-	--white-ball: #f0f0f0; /* Softer white for a modern look */
-	--black-ball: #333333; /* Neutral dark gray for better contrast */
-	--background-black: #1e1e1e; /* Dark gray for a sleek background */
-	--background-white: #87ceeb; /* Sky blue for a refreshing look */
+	--white-ball: #fff;
+	--black-ball: rgba(20, 35, 5, 0.927);
+	--background-black: #c10e0e;
+	--background-white: #daecfa;
 }
 
 .container {
@@ -18,7 +18,7 @@ body {
 	align-items: center;
 	height: 100vh;
 }
-
+/* 1 */
 #switch {
 	width: 0;
 	height: 0;
@@ -26,6 +26,7 @@ body {
 }
 
 label {
+	/* display: block; */
 	width: 150px;
 	height: 60px;
 	border-radius: 70px;
@@ -54,22 +55,10 @@ label::after {
 }
 
 #switch:checked + label {
-	background-image: url(https://images.pexels.com/photos/631477/pexels-photo-631477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+	background-image: url(https://images.pexels.com/photos/631477/pexels-photo-631477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
+    
 }
 
 label:active:after {
 	width: 60px;
-}
-
-.scroll-div {
-	background-color: rgb(194, 35, 35);
-	width: 500px;
-	height: 500px;
-	overflow-y: scroll;
-}
-
-.scroll-object {
-	height: 1000px;
-	background-color: lightblue;
-	padding: 20px;
 }
