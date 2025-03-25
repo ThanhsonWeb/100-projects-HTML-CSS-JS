@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+body p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    color: aliceblue;
+    font-weight: 700;
+}
+
+.typed-text {
+    color: rgb(224, 190, 42);
+    text-shadow: 1px -3px 10px currentColor;
+}
+
+.cursor {
+    /* color: yellow ; */
+    background-color: yellow;
+}
