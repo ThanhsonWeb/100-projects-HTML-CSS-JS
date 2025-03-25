@@ -29,7 +29,7 @@ a {
 a::before {
     content: "";
     position: absolute;
-    top: 0;
+    bottom: 0;
     height: 2px;
     width: 100%;
     background-color: #fff;
@@ -40,5 +40,5 @@ a::before {
 }
 
 a:hover::before {
-    transform: scaleX(1);
+    transform: scaleX(0.6);
 }

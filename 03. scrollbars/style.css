@@ -7,15 +7,15 @@
 }
 
 .scroll-div {
-	background-color: rgb(205, 201, 201);
+	background-color: rgb(194, 35, 35);
 	width: 500px;
 	height: 500px;
-	/* overflow-y: scroll; */
-	overflow: hidden;
+	overflow-y: scroll;
 }
 
+
 .scroll-object {
-	/* height: 1000px; */
-	/* background-color: lightblue; */
+	height: 1000px;
+	background-color: lightblue;
 	padding: 20px;
 }

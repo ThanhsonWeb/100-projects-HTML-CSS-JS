@@ -37,7 +37,7 @@ body {
 #accordion label span {
     rotate: 90deg;
     font-size: 22px;
-    color: aqua;
+    color: rgb(16, 60, 60);
 }
 
 #accordion li .content {

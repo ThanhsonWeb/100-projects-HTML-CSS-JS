@@ -1,0 +1,28 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: blueviolet;
+}
+
+button {
+	padding: 1rem;
+	border: 2px solid white;
+	background-color: blueviolet;
+	color: white;
+	transition: 0.3s;
+}
+
+button:hover {
+	background-color: white;
+	color: #000;
+	border: 2px solid rgb(8, 0, 16);
+}
+
+h2 {
+	color: transparent;
+	background-image: url(https://images.pexels.com/photos/19501326/pexels-photo-19501326/free-photo-of-koy-kahvaltisi.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
