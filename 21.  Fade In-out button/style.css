@@ -1,0 +1,58 @@
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: black;
+}
+
+.container {
+	/* display: flex; */
+	/* justify-content: center; */
+	text-align: center;
+	color: #fff;
+}
+
+.arrow {
+    margin-top: 400px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	background-color: #000;
+	position: relative;
+	animation: move 1.5s infinite ease-in-out;
+}
+
+.arrow::after {
+	content: "";
+	width: 15px;
+	height: 15px;
+	border-right: 3px solid #fff;
+	border-top: 3px solid #fff;
+	position: absolute;
+	top: 12px;
+	left: 15px;
+	rotate: 130deg;
+}
+
+@keyframes move {
+	0% {
+		transform: translateY(0);
+	}
+	20% {
+		transform: translateY(20px);
+	}
+	60% {
+		transform: translateY(0);
+	}
+}
+
+/* JS */
+.fade-in {
+	opacity: 1;
+	transition: 1s all ease-in;
+}
+.fade-out {
+	opacity: 0;
+	transition: 1s all ease-in;
+}
