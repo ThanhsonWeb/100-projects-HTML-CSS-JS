@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: rgb(194, 138, 138);
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+select {
+	padding: 5px;
+	border-radius: 20px;
+}
+
+input {
+	padding: 10px;
+	border-radius: 20px;
+}
+
+#btn {
+	padding: 10px;
+	font-size: 1.5rem;
+    border-radius: 10px;
+}
