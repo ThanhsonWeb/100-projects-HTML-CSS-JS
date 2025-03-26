@@ -16,7 +16,6 @@ function scroll() {
 
 // Nếu bạn đã cuộn xuống 700px, thì:
 
-// Sao chép
 // Chỉnh sửa
 // scrolled = (700 / 1000) * 100 = 70;
 // Thanh tiến trình sẽ dài 70%.

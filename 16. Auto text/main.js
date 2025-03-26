@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 });
 
+
 // 1
 function type() {
 	if (charIndex < words[index].length) {
@@ -43,6 +44,6 @@ function erase() {
 		if (index >= words.length) {
 			index = 0; // Loop back to the first word
 		}
-		setTimeout(type, typingDelay + 1100); //Pause before typing the next word
+		setTimeout(type, typingDelay + 2100); //Pause before typing the next word
 	}
 }
