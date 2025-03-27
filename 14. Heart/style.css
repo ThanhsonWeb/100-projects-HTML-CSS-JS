@@ -82,7 +82,7 @@ body {
 
 /* js */
 .red-heart.animation {
-	animation: pop 1s linear;
+	animation: pop 1s ;
 	visibility: visible;
 }
 .red-heart.fill-color {

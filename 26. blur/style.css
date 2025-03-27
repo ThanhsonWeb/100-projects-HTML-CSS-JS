@@ -1,0 +1,33 @@
+* {
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+	/* position: relative; */
+}
+
+.background {
+	background: url(https://images.pexels.com/photos/31270953/pexels-photo-31270953/free-photo-of-hai-ng-i-di-qua-d-n-fushimi-inari.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load)
+		no-repeat center center/cover;
+	position: absolute;
+	top: -30px;
+	left: -30px;
+	width: calc(100vw + 60px);
+	height: calc(100vh + 60px);
+	z-index: -1;
+	/* để hiện text */
+	fill: blue(0);
+}
+
+.loading-text {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 600;
+}

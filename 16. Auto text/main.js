@@ -1,7 +1,7 @@
 const typedTextSpan = document.querySelector(".typed-text");
 const cursor = document.querySelector(".cursor");
 
-const words = ["Sonddz", "Join", "Ben", "ken"];
+const words = ["Son", "Join", "Ben", "ken"];
 
 const typingDelay = 200;
 const erasingDelay = 200;
@@ -9,6 +9,8 @@ const erasingDelay = 200;
 const newLetterDelay = 2000;
 let index = 0;
 let charIndex = 0; // impact to add or erase
+
+
 
 //  3
 document.addEventListener("DOMContentLoaded", () => {
@@ -39,6 +41,9 @@ function erase() {
 		typedTextSpan.textContent = words[index].slice(0, charIndex - 1);
 		charIndex--;
 		setTimeout(erase, erasingDelay);
+
+
+		
 	} else {
 		index++;
 		if (index >= words.length) {
