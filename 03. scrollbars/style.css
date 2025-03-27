@@ -1,75 +1,33 @@
-body {
-	background-color: #121212; /* Darker background for better contrast */
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-:root {
-	--white-ball: #f0f0f0; /* Softer white for a modern look */
-	--black-ball: #333333; /* Neutral dark gray for better contrast */
-	--background-black: #1e1e1e; /* Dark gray for a sleek background */
-	--background-white: #87ceeb; /* Sky blue for a refreshing look */
+section {
+    width: 70vw;
+    margin-top: 50px;
+    border: 2px solid orangered;
+
+}
+.card-title {
+    font-size: 3rem;
+}
+p {
+    line-height: 1.5;
+    text-indent: 30px;
 }
 
-.container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
+/* scrollbars */
+::-webkit-scrollbar {
+    background-color: rgb(156, 168, 168);
+    width: 20px;
+    height: 10px;
 }
 
-#switch {
-	width: 0;
-	height: 0;
-	visibility: hidden;
-}
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(#4158D0, #C850C0 ,#FFCC70);
+    border-radius: 100px;
 
-label {
-	width: 150px;
-	height: 60px;
-	border-radius: 70px;
-	background-image: url(https://images.pexels.com/photos/53594/blue-clouds-day-fluffy-53594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-	position: relative;
-	cursor: pointer;
-	transition: 0.5s;
-}
-
-label::after {
-	content: "";
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	background-color: var(--black-ball);
-	position: absolute;
-	left: 5px;
-	top: 5px;
-	transition: 0.5s;
-}
-
-#switch:checked + label:after {
-	background-color: var(--white-ball);
-	transform: translateX(-100%);
-	left: calc(100% - 5px);
-}
-
-#switch:checked + label {
-	background-image: url(https://images.pexels.com/photos/631477/pexels-photo-631477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-}
-
-label:active:after {
-	width: 60px;
-}
-
-.scroll-div {
-	background-color: rgb(194, 35, 35);
-	width: 500px;
-	height: 500px;
-	overflow-y: scroll;
-}
-
-.scroll-object {
-	height: 1000px;
-	background-color: lightblue;
-	padding: 20px;
 }
