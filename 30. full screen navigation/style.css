@@ -1,0 +1,117 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+	color: #333;
+}
+/* Navigation */
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 0;
+	margin: 0;
+	/* dính sát 4 góc */
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1.2rem;
+	background-color: #b44343;
+	/* wtheo */
+	clip-path: circle(20px at calc(100vw - 5vw) 31px);
+	transition: clip-path 0.5s;
+}
+
+.menu li {
+	position: relative;
+	z-index: 5;
+}
+
+.menu a {
+	display: inline-block;
+	text-decoration: none;
+	color: rgb(38, 41, 2);
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 5px;
+	width: 100px;
+	border: 1px solid black;
+}
+
+.btn {
+	position: absolute;
+	top: 20px;
+	left: calc(100vw - 5vw);
+	transform: translateX(-50%);
+	cursor: pointer;
+}
+.btn > span {
+	width: 5px;
+
+	height: 5px;
+	display: block;
+	border: 2px solid white;
+	border-radius: 50%;
+	margin-bottom: 2px;
+}
+
+.highlight {
+	position: absolute;
+	top: 0;	
+	width: 0;
+	height: 0;
+	background-color: white;
+	transition: transform 0.3s;
+}
+
+/* image container */
+.image-container {
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img {
+	width: 250px;
+	height: 250px;
+	margin: 20px;
+	border-radius: 10px;
+}
+.img-one {
+	background-image: url(./hacker1.jpeg);
+	background-size: center;
+	background-position: center;
+}
+
+.img-two {
+	background-image: url(./hacker22.jpeg);
+	background-size: center;
+	background-position: center;
+}
+
+/* Content */
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+article {
+	padding: 2rem;
+}
+
+.container h2 {
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+.container p {
+	line-height: 1.7;
+	font-size: 1.2rem;
+	text-indent: 30px;
+}
