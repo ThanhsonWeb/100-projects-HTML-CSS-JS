@@ -9,7 +9,7 @@ document.querySelector("#btn").addEventListener("click", () => {
 	// 2
 	switch (selectOp) {
 		case "plus":
-			results.innerHTML = Number(num1) + Number(num2);
+			results.innerHTML = num1 + num2;
 			break;
 		case "min":
 			results.innerHTML = Number(num1) - Number(num2);
@@ -18,7 +18,7 @@ document.querySelector("#btn").addEventListener("click", () => {
 			results.innerHTML = Number(num1) / Number(num2);
 			break;
 		case "multi":
-			results.innerHTML = Number(num1) * Number(num2);
+			results.textContent = Number(num1) * Number(num2);
 			break;
 	}
 });
