@@ -1,0 +1,48 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(235, 220, 202);
+	padding: 7rem;
+}
+
+.container {
+	background-color: #fff;
+	padding: 30px 40px;
+	border-radius: 10px;
+    /* width: 50%; */
+}
+
+header h2 {
+    font-size: 2rem;
+}
+
+.desc {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.desc .content2 {
+    display: none;
+}
+
+
+button {
+    background-color: black;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+/* Js */
+.content2.toggle {
+    display: block;
+}
