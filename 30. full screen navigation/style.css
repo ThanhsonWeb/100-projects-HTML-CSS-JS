@@ -21,7 +21,7 @@ body {
 	gap: 1.2rem;
 	background-color: #b44343;
 	/* wtheo */
-	clip-path: circle(20px at calc(100vw - 5vw) 31px);
+	clip-path: circle(20px at calc(100vw - 5vw) 35px);
 	transition: clip-path 0.5s;
 }
 
@@ -62,9 +62,9 @@ body {
 .highlight {
 	position: absolute;
 	top: 0;	
-	width: 0;
-	height: 0;
-	background-color: white;
+	/* width: 0; */
+	/* height: 0; */
+	background-color: rgb(196, 166, 166);
 	transition: transform 0.3s;
 }
 

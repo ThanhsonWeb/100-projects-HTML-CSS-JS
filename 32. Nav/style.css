@@ -9,7 +9,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	width: 100%;
+	/* width: 100%; */
     /* cho nó nghiêng */
     perspective: 1000px;
 	position: relative;
@@ -42,7 +42,7 @@ body {
 	position: absolute;
 	top: 25%;
 	left: 0;
-	transform: translateY(-50%);
+	/* transform: translateY(-50%); */
 	width: 100%;
 	height: 3px;
 	background-color: rgb(212, 64, 101);
@@ -85,15 +85,7 @@ body {
 	background-color: rgb(137, 157, 157);
 }
 
-.overlay {
-    position: fixed;
-    left: -100%;
-	bottom: 0;
-	height: 100%;
-	width: 100%;
-	background: #212121;
-	z-index: 3;
-}
+
 
 .page {
 	position: absolute;
@@ -102,7 +94,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 5;
+	/* z-index: 5; */
 	pointer-events: none;
 	opacity: 0;
 	/* object-fit: cover;  chỉ use với img k dùng bg-image*/
@@ -137,8 +129,9 @@ body {
 
 /* javascript Animation $ Rotation */
 .page-container.active {
-	left: -10px;
-	transform: rotateY(45deg) scale(0.5);
+	/* left: -10px; */
+	transform: rotateY(40deg) scale(0.5);
+	box-shadow: -10px 10px 10px 5px gray;
 }
 .nav-list {
 	position: absolute;
@@ -151,7 +144,7 @@ body {
 	position: relative; 
 	color: #fff;
 	text-transform: capitalize;
-	font-size: 20px;
+	font-size: 50px;
 	padding: 10px;
 	transition: 0.5s;
 	letter-spacing: 1.5;
@@ -162,18 +155,11 @@ body {
 
 .link:hover {
 	opacity: 0.8;
-	color: rgb(160, 75, 234);
-	transform: translateX(-20px);
-    background-color: #414040;
+	color: rgb(48, 9, 83);
+	transform: translateX(-30px);
+    background-color: #ffffff;
 }
 
 .nav-list.show {
 	opacity: 1;
-}
-
-/* Animation fot javaScript */
-@keyframes slide {
-	100% {
-		left: 100%;
-	}
 }

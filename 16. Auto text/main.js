@@ -1,5 +1,4 @@
 const typedTextSpan = document.querySelector(".typed-text");
-const cursor = document.querySelector(".cursor");
 
 const words = ["Son", "Join", "Ben", "ken"];
 
