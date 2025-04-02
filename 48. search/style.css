@@ -1,0 +1,41 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+#searchBox {
+	display: flex;
+	justify-content: center;
+	height: 30px;
+	gap: 10px;
+}
+
+input {
+	padding: 0px 20px;
+}
+
+#searchBtn {
+	padding: 0 20px;
+	background-color: crimson;
+	color: #fff;
+}
+
+body p {
+	width: 40%;
+	margin: 0 auto;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.mark {
+    background-color: yellow;
+}
