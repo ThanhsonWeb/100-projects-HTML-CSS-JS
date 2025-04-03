@@ -1,0 +1,19 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #000;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url(https://images.pexels.com/photos/31007842/pexels-photo-31007842/free-photo-of-c-nh-d-ng-ph-thanh-ph-nagano-nh-t-b-n.jpeg?auto=compress&cs=tinysrgb&w=300&lazy=load)
+		 center;
+	/* background-size: cover; */
+	clip-path: circle(100px at var(--1) var(--2));
+}
