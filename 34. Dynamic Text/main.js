@@ -10,6 +10,8 @@ inputField.addEventListener(
 buttons.forEach((btn) => {
 	btn.addEventListener("click", () => {
 		if (btn.classList.contains("uppercase")) {
+
+			
 			outputField.innerHTML = outputField.innerHTML.toUpperCase();
 		} else if (btn.classList.contains("lowercase")) {
 			outputField.innerHTML = outputField.innerHTML.toLowerCase();

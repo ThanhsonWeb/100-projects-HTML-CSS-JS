@@ -14,5 +14,4 @@ saveBtn.addEventListener("click", () => {
 	let countStr = counts + " , ";
 	saveEl.textContent += countStr;
 	countEl.textContent = 0;
-	counts = 0;
 });
