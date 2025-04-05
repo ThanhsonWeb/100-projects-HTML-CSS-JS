@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.caculator {
+	display: flex;
+	display: grid;
+}
+
+.caculator .value {
+	grid-column: span 4;
+	height: 100px;
+	text-align: right;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 18px;
+}
+
+.caculator span {
+	display: grid;
+	width: 60px;
+	height: 60px;
+	background-color: rgb(181, 185, 185);
+	/* new new new */
+	place-items: center;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	color: #fff;
+}
+.caculator span:active {
+	background: rgb(255, 163, 26);
+	color: #fff;
+}
+
+.caculator .clear {
+	grid-column: span 2;
+	/* let it take 2 --> w120 vì 1 cell is w60 */
+	width: 120px;
+	background-color: rgb(255, 163, 26);
+}
+
+.caculator .equal {
+    grid-column: span 2;
+	width: 120px;
+    background-color: rgb(255, 163, 26);
+}
+

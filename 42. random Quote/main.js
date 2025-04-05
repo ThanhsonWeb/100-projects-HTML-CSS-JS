@@ -30,8 +30,12 @@ btn.addEventListener("click", () => {
 	generateQuote();
 });
 
+// main
 function generateQuote() {
-	let random = Number.parseInt(Math.random() * arrayOfQuote.length); // 0 -> 4
-	quoteOutput.innerHTML = `<span> ${arrayOfQuote[random].quote}</span>`;
+	// Generate a random index between 0 and arrayOfQuote.length - 1
+	const random = Math.floor(Math.random() * arrayOfQuote.length - 1);
+
+	// Display the random quote and its author
+	quoteOutput.innerHTML = `<span>${arrayOfQuote[random].quote}</span>`;
 	authorOutput.innerHTML = `<small>- ${arrayOfQuote[random].author}</small>`;
 }
