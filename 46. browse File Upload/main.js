@@ -11,27 +11,14 @@ function uploadFile(event) {
 	close.classList.add("exit");
 
 	image.src = URL.createObjectURL(event.target.files[0]);
+	// event.target.files 👉 là danh sách các file bạn chọn từ <input type="file">.
+
+	// files[0] 👉 là file đầu tiên, thường là ảnh bạn vừa chọn.
+
+	// URL.createObjectURL(files[0]) 👉 tạo ra đường dẫn tạm để hiển thị ảnh đó trên trang.
 
 	close.addEventListener("click", () => {
 		image.classList.remove("active");
 		close.classList.remove("exit");
 	});
 }
-
-
-
-// const closeBtn = document.querySelector(".icon p.close");
-// const imgElement = document.querySelector(".img img");
-// const uploadBtn = document.querySelector(".wrapper .upload");
-
-// // Simulate showing the image and enabling the close button
-// uploadBtn.addEventListener("click", () => {
-//     imgElement.classList.add("active"); // Show the image
-//     closeBtn.classList.add("exit"); // Show the close button
-// });
-
-// // Hide the image and close button when the close button is clicked
-// closeBtn.addEventListener("click", () => {
-//     imgElement.classList.remove("active"); // Hide the image
-//     closeBtn.classList.remove("exit"); // Hide the close button
-// });

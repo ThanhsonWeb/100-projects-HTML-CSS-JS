@@ -9,3 +9,13 @@ btn.addEventListener("click", () => {
 		p.innerHTML = p.textContent.replace(regExp, "<mark>$& </mark>");
 	}
 });
+
+// 2 !== 2      // false (giống nhau)
+
+// "abc" !== "ABC" // true (khác nhau ) . 
+
+// RegExp cho phép bạn tìm kiếm chuỗi "theo mẫu".
+
+// "gi" giúp tìm tất cả và không phân biệt hoa thường.
+
+// $& giữ lại giá trị khớp để chèn vào HTML mới (bọc trong <mark>).

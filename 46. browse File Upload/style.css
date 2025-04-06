@@ -14,7 +14,7 @@ body {
 }
 
 .wrapper {
-	max-width: 700px;
+	max-width: 600px;
 	height: 500px;
 	width: 100%;
 	border: 2px dashed rgb(7, 7, 7);
@@ -27,7 +27,7 @@ body {
 }
 
 .wrapper .upload {
-	display: inline-flex;
+	display: inline-block;
 	font-size: 2rem;
 	padding: 1rem;
 	border: 2px solid rgb(116, 31, 31);
@@ -38,8 +38,8 @@ body {
     cursor: pointer;
 }
 
-.wrapper .upload:active {
-	transform: scale(0.95);
+.wrapper .upload:hover {
+	transform: scale(01.05);
 }
 
 
@@ -50,7 +50,7 @@ body {
 	top: 20px;
 	font-size: 1.6rem;
 	cursor: pointer;
-    color: rgb(66, 125, 26);
+    color: rgb(255, 255, 255);
     z-index: 1;
     display: none;
 }
