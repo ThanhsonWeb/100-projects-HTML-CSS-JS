@@ -22,14 +22,14 @@ body {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	top: -15vh;
-	left: -15vw;
+	/* top: -15vh; */
+	/* left: -15vw; */
 	z-index: 1;
 }
 
 .arrow-btn {
 	position: fixed;
-	bottom: 10vh;
+	/* bottom: 10vh; */
 }
 
 .left-arrow {
@@ -49,21 +49,4 @@ body {
 }
 
 /* Animation For JavaScript */
-.animateTransition {
-	animation: animation var(--transition-speed) ease;
-}
 
-@keyframes animation {
-	0% {
-		transform: translateX(5px);
-		filter: blur(4px);
-	}
-	50% {
-		transform: translateX(-5px);
-		filter: blur(2px);
-	}
-	100% {
-		transform: translateX(0);
-		filter: blur(0);
-	}
-}

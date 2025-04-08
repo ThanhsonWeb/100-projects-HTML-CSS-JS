@@ -4,16 +4,6 @@ const arrowBtns = document.querySelectorAll(".arrow-btn");
 
 let activeImg = 0;
 
-function activeImages() {
-	imgs.forEach((img) => {
-		img.classList.remove("active");
-		img.classList.remove("animateTransition");
-	});
-
-	imgs[activeImg].classList.add("active");
-	imgs[activeImg].classList.add("animateTransition");
-}
-
 setImagesAsBackground();
 
 function setImagesAsBackground() {
@@ -38,6 +28,5 @@ arrowBtns.forEach((btn) => {
 		}
 
 		setImagesAsBackground(); //
-		activeImages(); // finally give it active 
 	});
 });

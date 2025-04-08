@@ -15,15 +15,15 @@
   .card {
 	border: 2px solid black;
 	padding: 20px;
-	width: 30%;
-	height: 50%;
+	width: 40%;
+	height: 40%;
 	cursor: pointer;
 	transition: all 0.5s;
   }
   
   .card:hover {
 	box-shadow: 1px 1px 5px 0px;
-	transform: scale(1.2);
+	transform: scale(1.1);
   }
   
   .container {
