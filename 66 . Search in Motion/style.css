@@ -25,7 +25,7 @@
 	box-shadow: 1px 1px 5px #292929;
 	margin: 10px;
 	position: relative;
-	transition: width 1.5s;
+	transition: width 0.7s;
   }
   
   .input {
@@ -35,7 +35,7 @@
 	border: none;
 	background: transparent;
 	outline: none;
-	transition-delay: 0.5s;
+	transition-delay: 0.2s;
   }
   
   .magnifier {
@@ -52,14 +52,12 @@
 	position: absolute;
 	right: 10px;
 	width: 30px;
-	transition: width 0.4s;
-	transition-delay: 0.5s;
 	color: #ffa31a;
   }
   
   /* JavaScript */
   .active.container {
-	width: 50px;
+	width: 100px;
 	display: flex;
   }
   

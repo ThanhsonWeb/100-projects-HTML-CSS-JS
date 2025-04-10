@@ -1,0 +1,63 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ccc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.testimonial-container {
+	background-color: rgb(19, 19, 19);
+	color: #fff;
+	padding: 5rem 8rem;
+	max-width: 800px;
+	position: relative;
+	box-shadow: 0 2px 4px 2px rgb(19, 19, 19);
+	text-align: center;
+}
+
+.username {
+	margin: 0;
+}
+
+.user {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.user-avatar {
+	border-radius: 100px;
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+}
+
+.user .user-info {
+	margin-top: 10px;
+	text-align: center;
+}
+.testimonial {
+	line-height: 25px;
+	text-align: center;
+}
+
+
+.line {
+    background-color: rgb(7, 7, 193);
+    height: 5px;
+    width: 100%;
+    animation: animation 10s ease infinite;
+}
+
+@keyframes animation {
+    0% {
+        transform: scaleX(0) ;
+    }
+}
