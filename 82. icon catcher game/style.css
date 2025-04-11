@@ -1,0 +1,60 @@
+body {
+	background: rgb(10, 10, 10);
+	color: #fff;
+	font-family: sans-serif;
+}
+
+.scores-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.total-score {
+	margin-right: 22px;
+	margin: 20px;
+	background-color: #ccc;
+	padding: 1rem;
+	color: #000;
+	text-align: center;
+}
+
+.time {
+	margin: 20px;
+	text-align: center;
+	background-color: #ccc;
+	padding: 1rem;
+	color: #000;
+}
+
+.grid-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.grid {
+	width: 90%;
+	height: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(36, 36, 36);
+	margin-top: 2rem;
+	padding: 20px;
+}
+
+.square {
+	height: 220px;
+	width: 220px;
+	margin: 10px;
+	background-color: azure;
+}
+
+/* js */
+.emoji {
+	background-image: url(https://images.pexels.com/photos/5946078/pexels-photo-5946078.jpeg?auto=compress&cs=tinysrgb&w=600);
+	background-position: center;
+	background-size: cover;
+}
