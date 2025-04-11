@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<section class="container">
+			<!-- 1 -->
+			<form class="book-form">
+				<!-- 1 -->
+				<div>
+					<label for="title"> Book Title</label>
+					<input type="text" id="title" />
+				</div>
+				<!-- 2 -->
+				<div>
+					<label for="author"> Book Author</label>
+					<input type="text" id="author" />
+				</div>
+				<!-- 3 -->
+				<div>
+					<label for="year"> Year Publish</label>
+					<input type="text" id="year" />
+				</div>
+
+				<button type="submit" class="btn">Add book</button>
+			</form>
+			<!-- 2 -->
+			<section class="table">
+				<section class="table-section">
+					<div>Title</div>
+					<div>Author</div>
+					<div>Year</div>
+				</section>
+				<div id="book-list"></div>
+			</section>
+		</section>
+
+		<script src="./main.js"></script>
+	</body>
+</html>
