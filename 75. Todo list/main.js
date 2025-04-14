@@ -22,12 +22,12 @@ function getTodo(value) {
 	let closeEl = document.createElement("span");
 	closeEl.innerHTML = "X";
 	closeEl.classList.add("delete");
-    // click vào X --> remove "todo" --> add class error --> fix content
+	// click vào X --> remove "todo" --> add class error --> fix content
 	closeEl.addEventListener("click", () => {
 		output.removeChild(todo);
 		message.classList.toggle("error");
 		message.textContent = "Item Deleted";
-        // after 3s vanish
+		// after 3s vanish
 		setTimeout(() => {
 			message.classList.toggle("error");
 		}, 3000);
@@ -41,7 +41,10 @@ function getTodo(value) {
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
 	let value = input.value;
-	if (!value.trim()) return;
-	output.appendChild(getTodo(value));
-	input.value = "";
+	if (!value) {
+		return;
+	} else {
+		output.appendChild(getTodo(value));
+		input.value = "";
+	}
 });

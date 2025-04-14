@@ -5,14 +5,14 @@ const score = document.querySelector("#score");
 let result = 0;
 let hitPosition;
 let currentTime = 60;
-let timerID = null;
+let timerId = null; // empty
 
 function randomSquare() {
 	squares.forEach((square) => {
 		square.classList.remove("emoji");
 	});
 
-	let randomSquare = squares[Math.floor(Math.random() * 9) + 1];
+	let randomSquare = squares[Math.floor(Math.random() * squares.length)];
 	randomSquare.classList.add("emoji");
 	hitPosition = randomSquare.id;
 }
@@ -22,13 +22,13 @@ squares.forEach((square) => {
 		if (square.id == hitPosition) {
 			result++;
 			score.textContent = result;
-			hitPosition = null;
+			hitPosition = null; // no value, empty
 		}
 	});
 });
 
 function moveEmoji() {
-	timeId = setInterval(randomSquare, 500);
+	timerId = setInterval(randomSquare, 500);
 }
 
 moveEmoji();
@@ -39,7 +39,7 @@ function countDown() {
 
 	if (currentTime == 0) {
 		clearInterval(countDownTimerId);
-		clearInterval(timerID);
+		clearInterval(timeId);
 		alert(`Game over ! Your final score is ${result}`);
 	}
 }
