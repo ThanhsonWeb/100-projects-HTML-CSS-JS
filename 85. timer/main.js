@@ -7,7 +7,7 @@ startBtn.addEventListener("click", startTimer);
 stopBtn.addEventListener("click", stopTimer);
 resetBtn.addEventListener("click", resetTimer);
 
-const INTERVAL_MS = 1000 / 60;
+const INTERVAL_MS = 1000 / 60; // => 16ms update supper fast
 let timerID;
 let lastTimerStartTime = 0;
 let millisElapsedBeforeLastStart = 0;
@@ -45,7 +45,7 @@ function resetTimer() {
 function updateTimer() {
 	const milllisElapsed = // calc ms
 		Date.now() - lastTimerStartTime + millisElapsedBeforeLastStart;
-	const secondsElapsed = milllisElapsed / 1000;
+	const secondsElapsed = milllisElapsed / 1000; // ms/1000 = s
 	const minutesElaped = secondsElapsed / 60;
 
 	const minutesText = formatNumber(Math.floor(minutesElaped), 2);

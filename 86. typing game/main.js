@@ -29,16 +29,15 @@ const game = {
 btn.addEventListener("click", () => {
 	if (btn.textContent === "Start") {
 		play();
-		typeArea.value = "";
-		typeArea.disabled = false;
 	} else if (btn.textContent === "Done") {
-		typeArea.disabled = true;
-		main.style.borderColor = "white";
 		end();
 	}
 });
 
 function play() {
+	typeArea.value = "";
+	typeArea.disabled = false;
+	// random Text
 	let randText = Math.floor(Math.random() * words.length);
 	main.textContent = words[randText];
 	game.arrText = words[randText];
@@ -51,6 +50,8 @@ function play() {
 }
 
 function end() {
+	typeArea.disabled = true;
+	main.style.borderColor = "white";
 	// take time when click "Done"
 	const duration = new Date();
 	game.end = duration.getTime();

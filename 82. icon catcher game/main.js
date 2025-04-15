@@ -8,10 +8,11 @@ let currentTime = 60;
 let timerId = null; // empty
 
 function randomSquare() {
+	// remove class
 	squares.forEach((square) => {
 		square.classList.remove("emoji");
 	});
-
+	// create random number and add class
 	let randomSquare = squares[Math.floor(Math.random() * squares.length)];
 	randomSquare.classList.add("emoji");
 	hitPosition = randomSquare.id;
@@ -28,7 +29,7 @@ squares.forEach((square) => {
 });
 
 function moveEmoji() {
-	timerId = setInterval(randomSquare, 500);
+	timeId = setInterval(randomSquare, 500);
 }
 
 moveEmoji();
@@ -44,4 +45,5 @@ function countDown() {
 	}
 }
 
+// Use to call, but also use to clearInterval
 let countDownTimerId = setInterval(countDown, 1000);
